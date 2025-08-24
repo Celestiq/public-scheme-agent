@@ -1,9 +1,6 @@
-# from logger_config import setup_logger
-
-# logger = setup_logger()
-from logger_config import setup_logger
-from agent import RAGAgent
-from chat_runtime import ChatRuntime
+from src.core.logger_config import setup_logger
+from src.core.agent import RAGAgent
+from src.core.chat_runtime import ChatRuntime
 
 if __name__ == "__main__":
     setup_logger()

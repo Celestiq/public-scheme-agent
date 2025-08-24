@@ -7,8 +7,8 @@ import pytz
 import logging
 import time
 
-from prompts import SYSTEM_PROMPT, TOOLS_POLICY
-from logger_config import setup_logger
+from src.core.prompts import SYSTEM_PROMPT, TOOLS_POLICY
+from src.core.logger_config import setup_logger
 
 from langchain.chat_models import init_chat_model
 from langchain_openai import OpenAIEmbeddings
@@ -55,7 +55,7 @@ class RAGAgent:
 
             t0 = time.perf_counter()
             self.embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
-            self.llm = init_chat_model("gpt-5-nano", model_provider="openai")
+            self.llm = init_chat_model("gpt-5-mini", model_provider="openai")
             self.loader = JSONLoader(file_path=knowledge_base, jq_schema=".[]", text_content=False)
             self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
             self.logger.info("Models and loaders initialized in %.2f ms", (time.perf_counter() - t0) * 1000)

@@ -7,7 +7,7 @@ import time
 
 from langchain_core.messages import HumanMessage, message_to_dict
 from langgraph.checkpoint.sqlite import SqliteSaver
-from agent import RAGAgent
+from src.core.agent import RAGAgent
 
 class ChatRuntime:
     def __init__(self, agent: RAGAgent, db_file="chat_state.db", logger_name="app.chat"):
