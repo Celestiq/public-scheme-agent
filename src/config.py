@@ -1,0 +1,1 @@
+KNOWLEDGE_BASE_PATH = "policies.json"

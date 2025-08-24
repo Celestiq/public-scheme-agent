@@ -1,0 +1,6 @@
+.env
+test/
+archive/
+output/
+rag_cache/
+test1.ipynb
