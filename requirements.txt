@@ -6,6 +6,7 @@ langchain-community
 langchain-core
 langchain-text-splitters
 langgraph
+langgraph-checkpoint-sqlite
 faiss-cpu
 openai
 pytz
