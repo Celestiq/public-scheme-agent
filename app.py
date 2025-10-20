@@ -134,4 +134,6 @@ def build_ui() -> gr.Blocks:
 
 if __name__ == "__main__":
     ui = build_ui()
-    ui.launch()
+    # For Render deployment, bind to 0.0.0.0 and use PORT env var
+    port = int(os.getenv("PORT", 7860))
+    ui.launch(server_name="0.0.0.0", server_port=port)
