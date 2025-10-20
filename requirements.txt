@@ -1,0 +1,12 @@
+gradio
+python-dotenv
+langchain
+langchain-openai
+langchain-community
+langchain-core
+langchain-text-splitters
+langgraph
+faiss-cpu
+openai
+pytz
+pydantic
