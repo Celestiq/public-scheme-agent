@@ -1,0 +1,10 @@
+.env
+test/
+archive/
+output/
+rag_cache/
+test1.ipynb
+app.log
+chat_state.db
+chat_state.db-shm
+chat_state.db-wal
